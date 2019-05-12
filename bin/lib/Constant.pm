@@ -1,0 +1,30 @@
+package Constant;
+
+use strict;
+use warnings;
+
+
+use base 'Exporter';
+
+use constant{
+    YES => 1,
+    NO => 0,
+    FILE => 2,
+    FILE_TO_CREATE => 3,
+    DIRECTORY=>4,
+    DIRECTORY_TO_CREATE=>5,
+    DIRECTORY_NOT_EMPTY=>6,
+    STRING=>7,
+    INTEGER=>8,
+    FLOAT=>9,
+    PREFIX_ERROR=>"[ERROR]",
+    PREFIX_EXECUTION_ERROR=>"[SYSTEM]",
+    PREFIX_USAGE=>"[USAGE]",
+    PREFIX_RUNNING=>"[RUNNING]",
+    PREFIX_FINISHED=>"[FINISHED]",
+    PREFIX_COMMAND=>"[COMMAND]"
+};
+
+our @EXPORT_OK = ('FILE', 'FILE_TO_CREATE', 'DIRECTORY', 'STRING', 'INTEGER', 'FLOAT', 'YES','NO', 'DIRECTORY_NOT_EMPTY', 'PREFIX_ERROR', 'PREFIX_EXECUTION_ERROR','PREFIX_USAGE','PREFIX_PROGRESS', 'PREFIX_COMMAND');
+
+1;

@@ -1,0 +1,27 @@
+# Configure the Orthofinder command line environment
+#CONDA_ENVIRONMENT = py27
+ORTHOFINDER_COMMAND = python2.7 /Users/Juliana/Downloads/OrthoFinder-2.2.7_source/orthofinder/orthofinder.py
+#ORTHOFINDER_COMMAND = orthofinder
+#Number of parallel sequence search threads [Default = 16]
+ORTHOFINDER_PARAMETER_T = 16
+#Number of parallel analysis threads [Default = 1]
+ORTHOFINDER_PARAMETER_A = 16
+
+# Change to the name of your reference genome without file extension, since
+# the name of the fasta it is the same name of the GFF.
+EVALUATED_ANNOTATION=Drosophila_simulans
+REFERENCE_ANNOTATION=Drosophila_melanogaster
+
+# GFF parameters
+ACCEPTED_TRANSCRIPTS=mRNA,gene_segment,C_gene_segment,D_gene_segment,J_gene_segment,V_gene_segment
+
+# RNA flag = Bam file must be provide if the flag is on
+RNASEQ=no
+
+
+#Pseudogene flag
+
+# Directory name patterns
+FASTA_DIR=FASTA
+GFF_DIR=GFF
+OUTPUT_DIR=OUTPUT
